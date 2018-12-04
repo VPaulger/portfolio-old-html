@@ -6,21 +6,22 @@ $("#contactSection").hide();
 $(".navLinks").on("click", function() {
   $("header").css("transition", "all 0.5s ease-in-out, background-color 0s");
   $("header").css("background-color", "rgba(0, 0, 0, 0)");
+  $("#headerBlock").css("display", "flex");
   // $(".navigation").css("position", "absolute");
   // $(".navigation").css("order", "1");
-  $(".landingNavigation").css("margin-top", "-168px");
-  $(".landingNavigation > li > a").css("display", "none");
-  $(".landingNavigation > li").css("border", "none");
-  $(".landingNavigation > li").css("cursor", "context-menu");
-  $(".landingNavigation > li").css("height", "16px");
-  $("header").css("margin-top", "40px");
-  $("header > img").css("order", "2");
-  $("header > h1").css("order", "3");
+  $(".landingNavigation").css("display", "none");
+  // $(".landingNavigation > li > a").css("display", "none");
+  // $(".landingNavigation > li").css("border", "none");
+  // $(".landingNavigation > li").css("cursor", "context-menu");
+  // $(".landingNavigation > li").css("height", "16px");
+  // $("header").css("margin-top", "22px");
+  // $("header > img").css("order", "2");
+  // $("header > h1").css("order", "3");
   $("header").css("position", "absolute");
   $("header").css("align-self", "flex-start");
   $("#flexboxWrapper").css("display", "flex");
   // $("#logoDropDownContainer").css({"margin-top":"10%"});
-  console.log("changing header css");
+  // console.log("changing header css");
 
   // var x = window.matchMedia("(max-width: 600)");
   // if (window.matchMedia("(max-width: 600px)").matches) { // If media query matches
@@ -42,8 +43,8 @@ $(".navLinks").on("click", function() {
 // function screenTest(e) {
 //   if (e.matches) {
 //     /* the viewport is 600 pixels wide or less */
-//     para.textContent = 'This is a narrow screen — less than 600px wide.';
-//     document.body.style.backgroundColor = 'red';
+//       $(".landingNavigation").css("margin-top", "-130px");
+
 //   } else {
 //     /* the viewport is more than than 600 pixels wide */
 //     para.textContent = 'This is a wide screen — more than 600px wide.';
@@ -75,6 +76,30 @@ $("#contact, #contact2").on("click", function() {
 $('#show').on('click', function() {
   img.fadeIn();
 });
+
+
+//email validation
+//email validation function
+function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+function validate() {
+  //declare subscribe input as the emal
+  var email = $(".emailInput").val();
+
+  //if email is valid or invalid display an alert
+  if (validateEmail(email)) {
+    alert("Thanks for your message! I will get back to you shortly.");
+  } else {
+    alert("Please enter a valid email.");
+  }
+  return false;
+}
+
+//on click submit the email for validation
+$("#contactSubmitButton").bind("click", validate);
 
 
 

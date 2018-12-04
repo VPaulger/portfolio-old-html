@@ -11,6 +11,7 @@
 <body>
   <header>
     <!-- <div id="backgroundDiv"> -->
+    <div id="headerBlock"></div>  
     <a href="index.html">
       <img id="vaughnPaulgerLogo" src="assets/vaughnPaulgerLogo.png" alt="Vaughn Paulger">
     
@@ -132,13 +133,13 @@
       <div id="contactContainer">
         <p>SAY HELLO!</p>
         <form name="contactForm" action="./index.html" method="POST">
-          <input class="contactInput" type="text" name="firstname" placeholder="First name">
+          <input class="contactInput" type="text" name="firstname" placeholder="First name" required>
           <br>
-          <input class="contactInput" type="text" name="lastname" placeholder="Last name">
+          <input class="contactInput" type="text" name="lastname" placeholder="Last name" required>
           <br>
           <input class="contactInput" type="text" name="phone" placeholder="Phone">
           <br>
-          <input class="contactInput" type="text" name="email" placeholder="Email">
+          <input class="emailInput contactInput" type="text" name="email" placeholder="Email" required>
           <br>
           <textarea id="notesTextArea" class="contactInput" name="notes" placeholder="Notes"></textarea>
           <br>

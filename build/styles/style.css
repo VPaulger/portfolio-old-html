@@ -42,6 +42,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  header #headerBlock {
+    width: 100%;
+    height: 22px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    margin-bottom: 17px; }
 
 #vaughnPaulgerLogo {
   width: 600px; }
@@ -63,7 +69,14 @@ header a {
   text-align: center;
   z-index: 5;
   margin-top: 24px;
-  align-self: flex-end; }
+  align-self: flex-end;
+  height: 22px; }
+  .navigation a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-shadow: 2px 2px #000000;
+    /* text-decoration: underline rgba(0, 89, 255, 0.726); */ }
 
 .navigation li:hover {
   /* background-color: rgba(0, 89, 255, 0.726); */
@@ -82,18 +95,12 @@ header a {
   cursor: pointer;
   text-shadow: 2px 2px #000000; }
 
-.navigation a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-  text-shadow: 2px 2px #000000;
-  /* text-decoration: underline rgba(0, 89, 255, 0.726); */ }
-
 .testNav {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  z-index: 5; }
+  z-index: 5;
+  height: 22px; }
 
 .testNav li {
   /* margin: 0 auto; */
@@ -107,9 +114,8 @@ header a {
   text-transform: uppercase;
   cursor: pointer;
   text-shadow: 2px 2px #000000; }
-
-.testNav li:hover {
-  border: 1px solid white; }
+  .testNav li:hover {
+    border: 1px solid white; }
 
 .navigation a:hover {
   /*color: rgba(0, 89, 255, 0.726);*/
@@ -140,22 +146,21 @@ header a {
   align-items: center;
   width: 100%;
   /* margin-top: 5%; */ }
+  #aboutSection p {
+    font-family: 'Roboto Condensed', sans-serif;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    /* color: black; */
+    color: white;
+    font-size: 22px;
+    margin: 80px 40px;
+    line-height: 1.5;
+    text-shadow: 2px 2px #000000; }
 
 #aboutContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%; }
-
-#aboutSection p {
-  font-family: 'Roboto Condensed', sans-serif;
-  /* background-color: rgba(255, 255, 255, 0.5); */
-  /* color: black; */
-  color: white;
-  font-size: 22px;
-  margin: 80px 40px;
-  line-height: 1.5;
-  text-shadow: 2px 2px #000000; }
 
 #selfPortrait {
   height: 350px;
@@ -186,9 +191,8 @@ header a {
   display: block;
   margin: 0 auto;
   justify-content: center; }
-
-.secondNavigation li {
-  width: 180px; }
+  .secondNavigation li {
+    width: 180px; }
 
 .experienceBlocks {
   text-align: center;
@@ -196,25 +200,21 @@ header a {
   margin-top: 80px;
   margin-bottom: 80px;
   position: relative; }
-
-.experienceBlocks a {
-  width: 100%; }
-
-.experienceBlocks img {
-  width: 75%;
-  height: 100%;
-  border: 2px solid #0066ff; }
-
-.experienceBlocks h3 {
-  margin: 10px;
-  font-size: 2rem;
-  font-weight: 500;
-  text-shadow: 2px 2px #000000; }
-
-.experienceBlocks p {
-  font-style: italic;
-  font-weight: 500;
-  text-shadow: 2px 2px #000000; }
+  .experienceBlocks a {
+    width: 100%; }
+  .experienceBlocks img {
+    width: 75%;
+    height: 100%;
+    border: 2px solid #0066ff; }
+  .experienceBlocks p {
+    font-style: italic;
+    font-weight: 500;
+    text-shadow: 2px 2px #000000; }
+  .experienceBlocks h3 {
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 2px 2px #000000; }
 
 .image1 {
   position: relative;
@@ -225,37 +225,29 @@ header a {
   position: absolute;
   width: 75%;
   height: 100%; }
-
-.image1 span:hover {
-  transform: scale(20); }
-
-.image1 span:nth-child(1) {
-  transform: rotate(0deg);
-  left: -25%;
-  top: -2px; }
-
-.image1 span:nth-child(2) {
-  transform: rotate(90deg);
-  top: -50%;
-  margin-left: 4px; }
-
-.image1 span:nth-child(3) {
-  transform: rotate(180deg);
-  left: 50%;
-  margin-top: 0.5px; }
-
-.image1 span:nth-child(4) {
-  transform: rotate(270deg);
-  top: 48%;
-  margin-left: 1px; }
-
-.image1 span:before {
-  content: '';
-  position: absolute;
-  width: 101%;
-  height: 2px;
-  background: #4C94FF;
-  animation: animate 12s linear infinite; }
+  .image1 span:nth-child(1) {
+    transform: rotate(0deg);
+    left: -25%;
+    top: -2px; }
+  .image1 span:nth-child(2) {
+    transform: rotate(90deg);
+    top: -50%;
+    margin-left: 4px; }
+  .image1 span:nth-child(3) {
+    transform: rotate(180deg);
+    left: 50%;
+    margin-top: 0.5px; }
+  .image1 span:nth-child(4) {
+    transform: rotate(270deg);
+    top: 48%;
+    margin-left: 1px; }
+  .image1 span:before {
+    content: '';
+    position: absolute;
+    width: 101%;
+    height: 2px;
+    background: #4C94FF;
+    animation: animate 12s linear infinite; }
 
 @keyframes animate {
   0% {
@@ -276,28 +268,27 @@ header a {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   /* height: 120%; */ }
+  #contactSection p {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    padding: 10px; }
 
 #contactContainer {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-#contactSection p {
-  align-self: center;
-  color: white;
-  font-size: 1.5rem;
-  margin-top: 60px;
-  font-weight: 800;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  text-align: center;
-  text-shadow: 2px 2px #000000; }
-
 form {
-  width: 30%;
+  width: 400px;
   /* margin: 80px 40px; */
   margin-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -318,7 +309,7 @@ label {
 
 #contactSubmitButton {
   margin-top: 20px;
-  border-radius: 8px;
+  border-radius: 25px;
   display: block;
   font-weight: 700;
   width: 220px;
@@ -327,9 +318,8 @@ label {
   border: 1px solid white;
   background-color: #0066ff;
   color: white; }
-
-#contactSubmitButton:hover {
-  background-color: rgba(0, 102, 255, 0.5); }
+  #contactSubmitButton:hover {
+    background-color: rgba(0, 102, 255, 0.5); }
 
 footer {
   width: 100%;
@@ -340,6 +330,8 @@ footer {
   align-self: flex-end; }
 
 @media only screen and (max-width: 600px) {
+  body {
+    background-position: 50%; }
   #vaughnPaulgerLogo {
     width: 95%;
     display: block;
@@ -347,12 +339,25 @@ footer {
   header h1 {
     margin-top: -5px; }
   .navigation {
-    margin-top: 10px;
+    margin-top: 15px;
     height: 20px; }
     .navigation li {
-      width: 100px; }
+      width: 115px; }
   .testNav li {
-    width: 100px; } }
+    width: 115px; }
+  #aboutContainer {
+    flex-direction: column; }
+    #aboutContainer #selfPortrait {
+      height: 250px;
+      margin-top: 40px;
+      margin-bottom: 20px; }
+    #aboutContainer p {
+      margin-top: 0;
+      margin-bottom: 40px; }
+  form {
+    width: 300px; }
+  #contactSubmitButton {
+    width: 180px; } }
 
 /*beginning of smoke animation styling*/
 body {
