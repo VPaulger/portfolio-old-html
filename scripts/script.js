@@ -1,44 +1,47 @@
 $( document ).ready(function() {
+
   
-//sclick carousel slider
+  
+// slick carousel slider
 
-$('.experienceContainer').slick({
-  dots: true,
-  infinite: false,
-  // autoplay: true,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-
+// $('.experienceContainer').slick({
+//   dots: true,
+//   infinite: false,
+//   // autoplay: true,
+//   speed: 300,
+//   slidesToShow: 4,
+//   slidesToScroll: 4,
+//   arrows: true,
+//   responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 3,
+//         slidesToScroll: 3,
+//         infinite: true,
+//         dots: true
+//       }
+//     },
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 2
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     }
+//     // You can unslick at a given breakpoint now by adding:
+//     // settings: "unslick"
+//     // instead of a settings object
+//   ]
+// });
+ 
 $("#aboutSection").hide();
 $("#experienceSection").hide();
 $("#contactSection").hide();
@@ -94,11 +97,47 @@ $(".navLinks").on("click", function() {
 
 // mql.addListener(screenTest);
 
-
 $("#about, #about2").on("click", function() {
   $("#aboutSection").show("1000");
   $("#experienceSection").hide();
   $("#contactSection").hide();
+});
+
+
+$('.experienceContainer').slick({
+  dots: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
+]
 });
 
 $("#experience, #experience2").on("click", function() {
@@ -106,6 +145,7 @@ $("#experience, #experience2").on("click", function() {
   $("#experienceSection").show("1000");
   $("#contactSection").hide();
 });
+
 
 $("#contact, #contact2").on("click", function() {
     $("#aboutSection").hide();

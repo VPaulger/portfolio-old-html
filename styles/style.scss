@@ -214,10 +214,14 @@ header a{
 }
 
 .experienceContainer {
-  display: flex;
-  width: 100%;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  // display: flex;
+  // width: 100%;
+  // align-items: flex-start;
+  // justify-content: space-evenly;
+  width: 90%;
+  // height: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .secondNavigation {
@@ -234,11 +238,16 @@ header a{
 } 
 
 .experienceBlocks{
+  // display: flex;
+  // justify-content: center;
   text-align: center;
   width: 25%;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  // width: 100px;
+  // height: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   position: relative;
+  // background-color: blue;
 
   a {
     width: 100%;
@@ -268,6 +277,8 @@ header a{
   position: relative;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .image1 span{
@@ -277,26 +288,26 @@ header a{
 
   &:nth-child(1) {
     transform:rotate(0deg);
-    left: -25%;
+    left: -25.2%;
     top: -2px;
   }
 
   &:nth-child(2) {
     transform:rotate(90deg);
     top: -50%;
-    margin-left: 4px;
+    margin-left: 2.5px;
   }
 
   &:nth-child(3) {
     transform:rotate(180deg);
-    left: 50%;
-    margin-top: 0.5px;
+    left: 50.5%;
+    margin-top: 2px;
   }
 
   &:nth-child(4) {
     transform:rotate(270deg);
-    top: 48%;
-    margin-left: 1px;
+    top: 50%;
+    margin-left: -2.5px;
   }
 
   &:before {
@@ -330,6 +341,24 @@ header a{
   transform-origin: right;
   }  
 } 
+
+.slick-dots li button {
+  color: white;
+}
+
+.slick-next {
+  color: white;
+}
+
+.testCarousel{
+  display: inline-block;
+
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+  }
+}
 
 /*contact section*/
 #contactSection{

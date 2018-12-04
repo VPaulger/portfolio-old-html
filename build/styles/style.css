@@ -179,10 +179,9 @@ header a {
   color: white; }
 
 .experienceContainer {
-  display: flex;
-  width: 100%;
-  align-items: flex-start;
-  justify-content: space-evenly; }
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%; }
 
 .secondNavigation {
   position: relative;
@@ -197,8 +196,8 @@ header a {
 .experienceBlocks {
   text-align: center;
   width: 25%;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   position: relative; }
   .experienceBlocks a {
     width: 100%; }
@@ -219,7 +218,9 @@ header a {
 .image1 {
   position: relative;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: center; }
 
 .image1 span {
   position: absolute;
@@ -227,20 +228,20 @@ header a {
   height: 100%; }
   .image1 span:nth-child(1) {
     transform: rotate(0deg);
-    left: -25%;
+    left: -25.2%;
     top: -2px; }
   .image1 span:nth-child(2) {
     transform: rotate(90deg);
     top: -50%;
-    margin-left: 4px; }
+    margin-left: 2.5px; }
   .image1 span:nth-child(3) {
     transform: rotate(180deg);
-    left: 50%;
-    margin-top: 0.5px; }
+    left: 50.5%;
+    margin-top: 2px; }
   .image1 span:nth-child(4) {
     transform: rotate(270deg);
-    top: 48%;
-    margin-left: 1px; }
+    top: 50%;
+    margin-left: -2.5px; }
   .image1 span:before {
     content: '';
     position: absolute;
@@ -262,6 +263,19 @@ header a {
   100% {
     transform: scaleX(0);
     transform-origin: right; } }
+
+.slick-dots li button {
+  color: white; }
+
+.slick-next {
+  color: white; }
+
+.testCarousel {
+  display: inline-block; }
+  .testCarousel div {
+    width: 100px;
+    height: 100px;
+    background-color: white; }
 
 /*contact section*/
 #contactSection {
